@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import ReactCounter from "../components/react/Counter.jsx";
+
+import VueCounter from "../components/vue/Couter.vue";
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>TEST</h1>
+		<a href="/">home</a>
+
+		<ReactCounter client:only="react" />
+
+		<VueCounter client:only="vue" />
+		
+	</main>
+</Layout>
